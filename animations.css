@@ -1,0 +1,106 @@
+@keyframes sign-animate {
+    0%{
+        transform: scale(.8);
+        width : 120px;
+        overflow: hidden;
+        opacity: 0;
+    }
+    30%{
+        transform: scale(1);
+        opacity: 1;
+        width : 120px;
+    }
+    50%{
+        opacity: 1;
+        width : 120px;
+    }
+    99%{
+        width : 80%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes sign-animate-resp {
+    0%{
+        transform: scale(.8);
+        width : 120px;
+        overflow: hidden;
+        opacity: 0;
+    }
+    30%{
+        transform: scale(1);
+        opacity: 1;
+        width : 120px;
+    }
+    50%{
+        opacity: 1;
+        width : 120px;
+    }
+    99%{
+        width : 100%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes spinner {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes boule {
+    from{
+        transform: translate(50%, 40%);
+    }
+    to{
+        transform: translate(20%, 30%);
+    }
+}
+@keyframes RespBoule {
+    from{
+        transform: translate(50%, 40%);
+    }
+    to{
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes textEnter {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes popText {
+    from{
+        transform: scale(.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes popCheck {
+    from{transform: scale(0.8);} to{transform: scale(1);}
+}
+
+@keyframes loader {
+    from{
+        left : 0;
+    }
+    to{
+        left : 110px
+    }
+}
