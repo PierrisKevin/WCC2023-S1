@@ -13,7 +13,8 @@
 *, body{
     margin : 0;
     padding :0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "mulish",sans-serif;
 }
 
@@ -33,6 +34,8 @@ body{
     width : 100%;
 }
 #container #header-contain .options{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap : 20px;
 }
@@ -81,9 +84,13 @@ body{
     height : 0;
     width : 20%;
     min-width: 200px;
-    transform: translateX(-6.5%);
+    -webkit-transform: translateX(-6.5%);
+        -ms-transform: translateX(-6.5%);
+            transform: translateX(-6.5%);
     background: #fff;
     border-radius: 5px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
     overflow: hidden;
 }
@@ -101,7 +108,11 @@ body{
     background: #fff;
     left : 7.5%;
     top : -10px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
     z-index: -1;
 
